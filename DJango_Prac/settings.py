@@ -30,7 +30,7 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-INSTALLED_APPS = [
+DEFAULT_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -38,6 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+
+DEVELOPED_APPS =[
+    'dj_app.apps.DjAppConfig'
+]
+
+INSTALLED_APPS = DEFAULT_APPS + DEVELOPED_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
