@@ -39,7 +39,7 @@ DEFAULT_APPS = [
     'django.contrib.staticfiles',
 ]
 
-DEVELOPED_APPS =[
+DEVELOPED_APPS = [
     'dj_app.apps.DjAppConfig'
 ]
 
@@ -60,7 +60,9 @@ ROOT_URLCONF = 'DJango_Prac.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR / 'templates'
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
